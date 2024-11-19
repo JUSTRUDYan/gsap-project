@@ -1,47 +1,19 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import { gsap } from "gsap-trial";
+
+import { ScrollTrigger } from "gsap-trial/ScrollTrigger";
+
+/* The following plugin is a Club GSAP perk */
+import { ScrollSmoother } from "gsap-trial/ScrollSmoother";
+
+
+gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
+  <main class="flex bg-background bg-20px size-full justify-between">
+    <h1 class="text-textColor text-[100%]">Creative scroll</h1>
+    <img src="/hero.png" alt="hero" class="w-1/3" />
   </main>
 </template>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
