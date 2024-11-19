@@ -4,19 +4,13 @@
 
 @layer base {
     @font-face {
-        font-family: 'raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(../public/fonts/raleway-regular.woff2) format('woff2');
+        font-family: 'raleway-c';
+        src: url(/fonts/raleway-regular.woff2) format('woff2');
     }
 
     @font-face {
-        font-family: 'outfit';
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(../public/fonts/outfit-regular.woff2) format('woff2');
+        font-family: 'outfit-c';
+        src: url(/fonts/outfit-regular.woff2) format('woff2');
     }
 
     :root {

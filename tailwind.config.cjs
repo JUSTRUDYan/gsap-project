@@ -16,6 +16,10 @@ module.exports = {
       backgroundImage: {
         'background': "url('./bg.jpg')",
       },
+      fontFamily: {
+        raleway: ['Raleway-c'],
+        outfit: ['Outfit-c'],
+      },
     },
   },
   plugins: [],
